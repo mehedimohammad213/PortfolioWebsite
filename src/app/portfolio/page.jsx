@@ -16,7 +16,7 @@ const items = [
     id: 2,
     color: "from-blue-300 to-violet-300",
     title: "Mave CMS",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    desc: "Led the product strategy and development of MAVE CMS, an enterprise-grade headless CMS utilizing MACH architecture. Spearheaded stakeholder negotiations, defined product.",
     img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     link: "https://mave.ethertech.ltd/login",
   },
