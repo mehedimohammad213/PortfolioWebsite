@@ -80,3 +80,43 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## CI/CD with GitHub Actions 🚀
+
+This project uses GitHub Actions for continuous deployment to Vercel. The workflow automatically builds and deploys your application when you push to the `main` or `master` branch.
+
+### Setup Required Secrets
+
+To enable automatic deployment, you need to add the following secrets to your GitHub repository:
+
+1. Go to your GitHub repository → Settings → Secrets and variables → Actions
+2. Add the following repository secrets:
+
+   - `VERCEL_TOKEN`: Your Vercel API token
+     - Get this from [Vercel Account Settings](https://vercel.com/account/tokens)
+
+   - `VERCEL_ORG_ID`: Your Vercel organization ID
+     - Find this in your Vercel dashboard or run `vercel whoami` locally
+
+   - `VERCEL_PROJECT_ID`: Your Vercel project ID
+     - Find this in your Vercel dashboard project settings
+
+### How to Get Vercel Credentials
+
+1. **Install Vercel CLI**: `npm i -g vercel`
+2. **Login to Vercel**: `vercel login`
+3. **Get your tokens and IDs**:
+   ```bash
+   vercel whoami
+   vercel projects ls
+   ```
+
+### Workflow Features
+
+- ✅ Automatic deployment on push to main/master branch
+- ✅ Pull request previews
+- ✅ Linting and build verification
+- ✅ Node.js 18 with npm caching
+- ✅ Production deployment with `--prod` flag
+
+The workflow file is located at `.github/workflows/main.yml`.
