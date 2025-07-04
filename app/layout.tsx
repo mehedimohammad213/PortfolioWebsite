@@ -46,7 +46,7 @@ export default function RootLayout({
       <head>
         {/* favicon */}
         <link rel="icon" href="/favicon.ico" />
-        </head>
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -55,7 +55,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          <Analytics />
+          {process.env.NODE_ENV === "production" && <Analytics />}
         </ThemeProvider>
       </body>
     </html>

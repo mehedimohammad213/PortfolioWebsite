@@ -15,14 +15,17 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: "18"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build project
-        run: npm run build
+      - name: Build and export project
+        run: |
+          echo "Starting build process..."
+          npm run build
+          echo "Build completed. Checking output..."
 
       - name: Verify build output
         run: |
@@ -30,9 +33,21 @@ jobs:
           ls -la
           if [ -d "out" ]; then
             echo "✅ Build successful - out directory found"
+            echo "Contents of out directory:"
             ls -la out/
+            echo "Total files in out directory:"
+            find out -type f | wc -l
+            echo "Sample files:"
+            find out -type f | head -10
           else
             echo "❌ Build failed - out directory not found"
+            echo "Current directory contents:"
+            ls -la
+            echo "Checking for other build outputs..."
+            if [ -d ".next" ]; then
+              echo "Found .next directory - this suggests build worked but export failed"
+              ls -la .next/
+            fi
             exit 1
           fi
 
