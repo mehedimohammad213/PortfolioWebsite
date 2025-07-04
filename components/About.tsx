@@ -106,7 +106,7 @@ export default function About() {
       {/* Add downloadable CV button */}
       <div className="mt-8 text-center">
         <a
-          href="https://drive.google.com/file/d/1k9u8kSZBKRf637oK06XbSLjdqR8oc4bJ/view?usp=sharing"
+          href="https://drive.google.com/file/d/118pJoWRfvfqR5GA4i4sOOUitBXQ2-JRP/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
