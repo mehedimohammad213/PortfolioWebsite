@@ -48,7 +48,7 @@ const jobProjects = [
   },
   {
     imagePath: "/aranya-ecommerce.webp",
-    title: "Aranya - E-Commerce Transformation",
+    title: "MAS - E-Commerce Transformation",
     slug: "aranya",
     description:
       "Led end-to-end product discovery and user journey optimization for Aranya's e-commerce platform. Collaborated with UI/UX teams to identify and eliminate friction points, resulting in a 35% improvement in load times and 20% increase in conversion rates through strategic phased rollout.",
@@ -60,7 +60,7 @@ const jobProjects = [
       "Performance Analytics",
       "UX Design",
     ],
-    link: "https://www.aranya.com.bd/",
+    link: "https://masoutfits.com/",
   },
   {
     imagePath: "/uhl-hms.webp",

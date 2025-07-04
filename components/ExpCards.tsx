@@ -46,7 +46,7 @@ const jobPositions = [
         technologies: ["AI/ML", "Analytics", "LMS"],
       },
       {
-        title: "Aranya (E-Commerce Platform)",
+        title: "MAS (E-Commerce Platform)",
         description:
           "Led product discovery and user journey mapping. Collaborated with UI/UX to reduce friction points, improving site load times by 35% and increasing conversions by 20% through phased rollout approach.",
         technologies: ["NextJS", "Redux", "UX Research"],
